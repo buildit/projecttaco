@@ -1,10 +1,17 @@
 import '../assets/stylesheets/base.scss';
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 class App extends Component {
   render() {
     return(
-      <h1>Hello, {this.props.name}!</h1>
+      <div>
+      <h1>Hello, Taco!</h1>
+        <ul role="nav">
+            <li><Link to="/about">About Tacos</Link></li>
+            <li><Link to="/orders">Orders</Link></li>
+          </ul>
+      </div>
     )
   }
 };
