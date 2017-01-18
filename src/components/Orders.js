@@ -1,4 +1,3 @@
-// import '../assets/stylesheets/base.scss';
 import React, { Component } from 'react';
 
 class Orders extends Component {
