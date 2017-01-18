@@ -2,7 +2,22 @@
   .landing-image {
     background-size: cover;
     background-image: url("https://d29vij1s2h2tll.cloudfront.net/~/media/images/taco-bell/products/heroes/26021_combo_double_stacked_tacos_box_1400x800.jpg");
-    width: 300px;
+    width: 400px;
     height: 300px;
+  }
+  .nav {
+    height: 50px;
+    width: 100%;
+    padding: 0.5rem;
+    background: gray;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    .nav-item {
+      margin: 0 1rem;
+      display: inline-block;
+    }
   }
 }
