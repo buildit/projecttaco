@@ -1,4 +1,4 @@
-import '../assets/stylesheets/base.scss';
+// import '../assets/stylesheets/base.scss';
 import React, { Component } from 'react';
 
 class About extends Component {
