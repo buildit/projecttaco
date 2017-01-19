@@ -1,13 +1,5 @@
-@import "landing";
 @import "nav";
 @import "taco-crumbs";
-
-.view {
-  margin: 0;
-  .taco-crumbs {
-    margin-bottom: 1rem;
-  }
-}
 
 // TODO: Make Button a component
 .button {
