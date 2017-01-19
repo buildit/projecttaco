@@ -1,0 +1,12 @@
+.taco-crumbs {
+  margin: 0;
+  padding: 0.2rem;
+  background: gray;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  .crumb {
+    margin: 0.3rem;
+    display: inline-block;
+  }
+}
