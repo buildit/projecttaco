@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class TacoCrumbs extends Component {
-  render() {
-    return(
-      <div className="taco-crumbs">
-        <span className="crumb">pickup order</span>
-      </div>
-    )
-  }
-};
+const TacoCrumbs = ({ viewName }) => (
+  <div className="taco-crumbs">
+    <span className="back-icon">back</span>
+    <span className="action">{ viewName }</span>
+    <span className="cart-icon">cart</span>
+  </div>
+)
 
 export default TacoCrumbs;
