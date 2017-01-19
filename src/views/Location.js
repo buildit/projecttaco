@@ -8,8 +8,7 @@ class Location extends Component {
   render() {
     return(
       <div className="view location">
-        <TacoCrumbs />
-        <h1>Choose pickup location</h1>
+        <TacoCrumbs viewName="Choose a restaurant" />
         <div className="map-type-picker">
           <span className="map-type active">Map</span>
           <span className="map-type">List</span>

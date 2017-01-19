@@ -8,7 +8,6 @@ class Landing extends Component {
   render() {
     return(
       <div className="view landing">
-        <TacoCrumbs />
         <h1>Your recent order</h1>
         <PlaceholderImage width={500} height={300} label="Photo representing your last order"/>
         <div className="button">

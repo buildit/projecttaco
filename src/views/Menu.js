@@ -8,8 +8,7 @@ class Menu extends Component {
   render() {
     return(
       <div className="view menu">
-        <TacoCrumbs />
-        <h1>Menu</h1>
+        <h1>New order</h1>
         <div className="menu-category-picker">
           <span className="menu-category active">Popular</span>
           <span className="menu-category">Tacos</span>
