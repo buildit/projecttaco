@@ -18,7 +18,6 @@ class Landing extends Component {
         </div>
         <Nav />
       </div>
-
     )
   }
 };

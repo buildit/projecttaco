@@ -1,10 +1,18 @@
 @import "landing";
+@import "location";
+
 
 // Base style for all Views
 // Also apply layout styles to child components here
 // For example, the TacoCrumbs component has a default margin of 0, and its parent container, the "View", is responsible for defining the bottom margin.
 .view {
   margin: 0;
+  .placeholder {
+    background-size: cover;
+    background-image: url("http://www.placehold.it/400x300");
+    width: 400px;
+    height: 300px;
+  }
   .taco-crumbs {
     margin-bottom: 1rem;
   }
