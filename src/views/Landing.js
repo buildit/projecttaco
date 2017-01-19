@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import Nav from '../components/nav';
 
 class Landing extends Component {
   render() {
@@ -13,11 +14,7 @@ class Landing extends Component {
         <div className="button">
           <Link to="/location">New Order</Link>
         </div>
-        <div className="nav">
-          <span className="nav-item">home</span>
-          <span className="nav-item">history</span>
-          <span className="nav-item">location</span>
-        </div>
+        <Nav />
       </div>
 
     )
