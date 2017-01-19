@@ -9,6 +9,7 @@ module.exports = {
     loaders: [
       { test: /\.js?$/, loader: 'babel-loader', exclude: /node_modules/, query: {
           presets: ['es2015', 'react'],
+          plugins: ['transform-runtime'],
         }, },
       { test: /\.s?css$/, loader: 'style!css!sass' },
       { test: /\.json$/, loader: 'json-loader' },
