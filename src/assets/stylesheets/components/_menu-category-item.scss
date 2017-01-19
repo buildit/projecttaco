@@ -1,12 +1,16 @@
 .menu-category-item {
-  outline: 2px solid white;
   margin: 0;
   display: flex;
-
-  .placeholder {
-    background-size: cover;
-    background-image: url("http://www.placehold.it/120x120");
-    width: 120px;
-    height: 120px;
+  background: white;
+  .category-name {
+    color: $taco-bell-purple-1;
+    padding: 0.5rem;
   }
+
+  // .placeholder {
+  //   background-size: cover;
+  //   background-image: url("http://www.placehold.it/120x120");
+  //   width: 120px;
+  //   height: 120px;
+  // }
 }
