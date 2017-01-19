@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import Nav from '../components/Nav';
 import TacoCrumbs from '../components/TacoCrumbs';
+import PlaceholderImage from '../components/PlaceholderImage';
 
 class Location extends Component {
   render() {
@@ -13,7 +14,7 @@ class Location extends Component {
           <span className="map-type active">Map</span>
           <span className="map-type">List</span>
         </div>
-        <div className="placeholder">map placeholder</div>
+        <PlaceholderImage width={500} height={300} label="Map centered on current location"/>
         <div className="button">
           <Link to="/menu">Menu</Link>
         </div>
