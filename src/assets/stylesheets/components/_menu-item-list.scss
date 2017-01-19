@@ -1,7 +1,9 @@
 .menu-item-list {
+  @include outer-container;
   .menu-item {
-    @include span-columns(3);
-    width: 180px;
-    margin: 10px;
+    outline: 1px solid pink;
+    @include span-columns(6);
+    width: 160px;
+    margin: 15px;
   }
 }
