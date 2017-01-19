@@ -8,8 +8,17 @@ const PlaceholderImage = ({ width = 100, height = 100, label="" }) => {
     width,
     height,
   }
+  const labelStyle = {
+    color: '#969696',
+    padding: '1rem',
+  }
+
   return (
-    <div style={placeholderImageStyle}>{label}</div>
+    <div style={placeholderImageStyle}>
+      <div style={labelStyle}>
+        {label}
+      </div>
+    </div>
   )
 }
 

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import Nav from '../components/Nav';
 import TacoCrumbs from '../components/TacoCrumbs';
+import PlaceholderImage from '../components/PlaceholderImage';
 
 class Landing extends Component {
   render() {
@@ -9,7 +10,7 @@ class Landing extends Component {
       <div className="view landing">
         <TacoCrumbs />
         <h1>Your recent order</h1>
-        <div className="landing-image"></div>
+        <PlaceholderImage width={500} height={300} label="Photo representing your last order"/>
         <div className="button">
           <Link to="/cart">Re-order</Link>
         </div>
