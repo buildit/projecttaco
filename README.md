@@ -8,7 +8,7 @@
 https://project-taco-staging.herokuapp.com
 
 ### Production URL
-
+https://project-taco-production.herokuapp.com/#/
 
 ### DEPLOYING TO HEROKU
 This app is set up for deployment to Heroku!
