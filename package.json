@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "postinstall": "webpack -p --config webpack.prod.config.js"
+    "postinstall": "webpack -p --config webpack.prod.config.js",
+    "docs": "./node_modules/.bin/esdoc"
   },
   "author": "",
   "license": "ISC",
@@ -27,9 +28,14 @@
     "webpack": "^1.12.14"
   },
   "devDependencies": {
+    "esdoc": "^0.5.2",
     "json-loader": "^0.5.4",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-dev-server": "^1.14.1",
     "webpack-hot-middleware": "^2.10.0"
+  },
+  "esdoc": {
+    "source": "./src",
+    "destination": "./dist/esdoc"
   }
 }

@@ -18,3 +18,8 @@ All you need to do is check code into the repo and the heroku site will build an
 Heroku will follow the `postinstall` command in your `package.json` and compile assets with `webpack.prod.config.js`. It runs the Express web server in `server.js`. You'll notice there's a special section set up for running in development.
 
 If you've never deployed a Node app to Heroku (or just need a refresher), they have a really great walkthrough [here](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction).
+
+### Generatating Javascript docs
+`npm run docs`
+
+Once docs have been generated, you can visit [your local server](http://localhost:8080/esdoc) to view them.
