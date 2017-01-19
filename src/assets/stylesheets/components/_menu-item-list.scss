@@ -1,0 +1,7 @@
+.menu-item-list {
+  .menu-item {
+    @include span-columns(3);
+    width: 180px;
+    margin: 10px;
+  }
+}

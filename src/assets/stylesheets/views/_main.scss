@@ -8,7 +8,12 @@
 // For example, the TacoCrumbs component has a default margin of 0, and its parent container, the "View", is responsible for defining the bottom margin.
 .view {
   margin: 0;
-  .taco-crumbs {
-    margin-bottom: 1rem;
+  margin-top: 80px; // Allow space for the "View Title" and "Taco Crumbs"
+
+  .taco-crumbs,
+  .view-title {
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 }
