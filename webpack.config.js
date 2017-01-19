@@ -11,10 +11,14 @@ module.exports = {
           presets: ['es2015', 'react'],
         }, },
       { test: /\.s?css$/, loader: 'style!css!sass' },
+      { test: /\.json$/, loader: 'json-loader' },
     ]
   },
   resolve: {
-    extensions: ['', '.js']
+    extensions: ['', '.js'],
+    alias: {
+      notifications: path.join(__dirname, 'src/notifications'),
+    }
   },
   output: {
     path: path.join(__dirname, '/dist'),
@@ -28,6 +32,13 @@ module.exports = {
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new webpack.DefinePlugin({
+      'aws': {
+        'accessKeyId': JSON.stringify('AKIAII47F3M5KTOZSPXA'),
+        'secretAccessKey': JSON.stringify('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'),
+        'region': JSON.stringify('us-east-1'),
+      }
+    }),
   ]
 };
