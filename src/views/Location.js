@@ -15,7 +15,7 @@ class Location extends Component {
         </div>
         <div className="placeholder">map placeholder</div>
         <div className="button">
-          <Link to="/location">Menu</Link>
+          <Link to="/menu">Menu</Link>
         </div>
         <Nav />
       </div>

@@ -1,0 +1,12 @@
+.menu-category-item {
+  outline: 2px solid white;
+  margin: 0;
+  display: flex;
+
+  .placeholder {
+    background-size: cover;
+    background-image: url("http://www.placehold.it/120x120");
+    width: 120px;
+    height: 120px;
+  }
+}
