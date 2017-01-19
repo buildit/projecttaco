@@ -1,11 +1,11 @@
 import './assets/stylesheets/main.scss';
 import React from 'react';
 import { render } from 'react-dom';
-import App from './components/App';
-import About from './components/About';
-import Orders from './components/Orders';
-import Landing from './components/Landing';
-import Location from './components/Location';
+import App from './views/App';
+import About from './views/About';
+import Orders from './views/Orders';
+import Landing from './views/Landing';
+import Location from './views/Location';
 import { Router, Route, hashHistory } from 'react-router';
 
 render((
