@@ -1,5 +1,7 @@
 # project Taco
 
+[![Build Status](https://travis-ci.org/buildit/projecttaco.svg?branch=master)](https://travis-ci.org/buildit/projecttaco)
+
 ### UP & RUNNING
 * `npm install`
 * `npm start`
