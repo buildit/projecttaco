@@ -5,7 +5,7 @@ import Nav from '../components/Nav';
 import TacoCrumbs from '../components/TacoCrumbs';
 import PlaceholderImage from '../components/PlaceholderImage';
 
-export class Landing extends Component {
+export default class Landing extends Component {
   render() {
     return(
       <div className="view landing">
