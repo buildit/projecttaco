@@ -4,3 +4,9 @@ node_js:
 
 before_script:
   - npm install -g nyc
+
+deploy:
+  provider: surge
+  project: ./dist/
+  domain: example.surge.sh
+  skip_cleanup: true
