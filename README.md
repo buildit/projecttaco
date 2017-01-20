@@ -1,5 +1,4 @@
 # project Taco
-[![Build Status](https://travis-ci.org/BillyZac/projecttaco.svg?branch=master)](https://travis-ci.org/BillyZac/projecttaco)
 
 ### UP & RUNNING
 * `npm install`
