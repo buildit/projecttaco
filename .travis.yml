@@ -5,6 +5,9 @@ node_js:
 before_script:
   - npm install -g nyc
 
+script:
+  - npm run postinstall
+
 deploy:
   provider: surge
   project: ./dist/
