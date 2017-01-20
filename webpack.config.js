@@ -18,7 +18,9 @@ module.exports = {
   resolve: {
     extensions: ['', '.js'],
     alias: {
+      actions: path.join(__dirname, 'src/actions'),
       notifications: path.join(__dirname, 'src/notifications'),
+      sagas: path.join(__dirname, 'src/sagas'),
     }
   },
   output: {
