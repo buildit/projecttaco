@@ -1,0 +1,50 @@
+.cart {
+
+
+  .promo {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart-header {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    background: gray;
+    padding: 1rem;
+    color: white;
+  }
+
+  .pickup-location {
+    margin-bottom: 2rem;
+    .content {
+      display: flex;
+      justify-content: space-between;
+      .address {
+        * {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .payment-information {
+    margin-bottom: 2rem;
+    .payment-method {
+      .checkbox {
+        margin-right: 10px;
+      }
+      display: flex;
+      * {
+        margin: 0;
+      }
+    }
+  }
+
+  .place-order {
+    display: flex;
+    justify-content: space-around;
+  }
+}
