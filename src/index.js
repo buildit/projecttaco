@@ -5,6 +5,7 @@ import Orders from './views/Orders';
 import Landing from './views/Landing';
 import Location from './views/Location';
 import Menu from './views/Menu';
+import Cart from './views/Cart';
 import { Router, Route, hashHistory } from 'react-router';
 import { Provider } from 'react-redux';
 
@@ -19,9 +20,8 @@ render((
         <Route path="/landing" component={Landing}/>
         <Route path="/location" component={Location}/>
         <Route path="/menu" component={Menu}/>
+        <Route path="/cart" component={Cart}/>
         {
-          /* cart */
-          /* payment */
           /* receipt */
           /* history */
         }

@@ -1,7 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const ViewTitle = ({ title }) => (
-  <h1 className="view-title">{title}</h1>
+  <div className="view-title">
+    <h1>{title}</h1>
+    <Link to="/cart"><span>Cart</span></Link>
+  </div>
 )
 
 export default ViewTitle;
