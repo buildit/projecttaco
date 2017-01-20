@@ -8,9 +8,10 @@ import {
 
 require('es6-promise').polyfill();
 
-export function *retrieveMenu(action) {
+export const menuAjaxEndpoint = '//some-menu-url.json';
+export function *retrieveMenu() {
   try {
-    const response = yield call(isomorphicFetch, '//some-menu-url.json');
+    const response = yield call(isomorphicFetch, menuAjaxEndpoint);
     if (response.status >= 400) {
       throw new Error("Nope.");
     }
