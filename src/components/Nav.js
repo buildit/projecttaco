@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 class Nav extends Component {
   render() {
     return(
       <div className="nav">
-        <span className="nav-item">home</span>
-        <span className="nav-item">history</span>
-        <span className="nav-item">location</span>
+        <Link to="/">
+          <span className="nav-item">home</span>
+        </Link>
+        <Link to="/history">
+          <span className="nav-item">history</span>
+        </Link>
+        <Link to="/location">
+          <span className="nav-item">location</span>
+        </Link>
       </div>
     )
   }
