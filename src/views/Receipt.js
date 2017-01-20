@@ -3,17 +3,16 @@ import { Link } from 'react-router';
 import Nav from '../components/Nav';
 import ViewTitle from '../components/ViewTitle';
 
-class Menu extends Component {
+class Receipt extends Component {
   render() {
     return(
-      <div className="view menu">
-        <ViewTitle title="New order" />
-        <MenuCategoryList />
-        <MenuItemList />
+      <div className="view receipt">
+        <ViewTitle title="Receipt" />
+        <div>hey your receipt</div>
         <Nav />
       </div>
     )
   }
 };
 
-export default Menu;
+export default Receipt;
