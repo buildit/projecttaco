@@ -25,27 +25,32 @@ class Cart extends Component {
 
           <div className="pickup-location">
             <h2>Pickup location</h2>
-            <p>123 Union St.</p>
-            <p>San Antonio, TX 55555</p>
-            <Link to="/location">Change location</Link>
-            <PlaceholderImage width={50} height={50} label=""/>
+            <div className="content">
+              <div className="address">
+                <p>123 Union St.</p>
+                <p>San Antonio, TX 55555</p>
+                <Link to="/location">Change location</Link>
+              </div>
+              <div className="map">
+                <PlaceholderImage width={100} height={100} label=""/>
+              </div>
+            </div>
           </div>
 
           <div className="payment-information">
             <h2>Payment information</h2>
             <div className="payment-method">
-              <input type="checkbox"></input>
-              <span>Credit card</span>
-              <span>Visa ending in 0000</span>
-            </div>
-            <div className="payment-method">
-              <input type="checkbox"></input>
-              <span>Gift card</span>
-              <span>$12.32 remaining</span>
+              <div className="checkbox">
+                <input type="checkbox"></input>
+              </div>
+              <div>
+                <h3>Gift card</h3>
+                <span>$12.32 remaining</span>
+              </div>
             </div>
           </div>
 
-          <div>
+          <div className="place-order">
             <span>Subtotal $25.72</span>
             <button>Place order</button>
           </div>
