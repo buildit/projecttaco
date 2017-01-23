@@ -20,11 +20,10 @@ class StyleGuide extends Component {
           <h2>This is a secondary header</h2>
         </div>
         <div>
-          {
-            // <Button
-            //   label="Click me!"
-            // >
-          }
+          <h1>This is a button</h1>
+          <div className="button">
+            <div>Click me</div>
+          </div>
         </div>
       </div>
     )

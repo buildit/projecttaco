@@ -13,9 +13,11 @@
   margin: 1rem;
   display: flex;
   justify-content: center;
-  background: black;
+  background: $taco-pink;
+  color: white;
+  text-transform: uppercase;
   &:hover {
-    background: red;
+    background: $taco-orange;
   }
   a {
     color: white;
