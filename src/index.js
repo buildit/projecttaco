@@ -8,6 +8,7 @@ import Menu from './views/Menu';
 import Cart from './views/Cart';
 import Receipt from './views/Receipt';
 import History from './views/History';
+import StyleGuide from './views/StyleGuide';
 import { Router, Route, hashHistory } from 'react-router';
 import { Provider } from 'react-redux';
 
@@ -26,6 +27,7 @@ render((
         <Route path="/receipt" component={Receipt}/>
         <Route path="/cart" component={Cart}/>
         <Route path="/history" component={History}/>
+        <Route path="/style-guide" component={StyleGuide}/>
     </Router>
   </Provider>
 ), document.getElementById('root'))
