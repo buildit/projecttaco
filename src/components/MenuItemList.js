@@ -21,7 +21,7 @@ const fakeMenu = [
   },
 ]
 
-const formatPrice = price => `$${price.toFixed(2)}`
+const formatPrice = price => `${price.toFixed(2)}`
 
 class MenuItemList extends Component {
   render() {
