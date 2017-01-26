@@ -1,4 +1,4 @@
-import './assets/stylesheets/main.scss';
+//import './assets/stylesheets/main.scss';
 import React from 'react';
 import { render } from 'react-dom';
 import Orders from './views/Orders';
