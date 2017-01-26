@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 // @import url('./fonts/Franchise-Free-Bold.tff');
 // @import url('./fonts/BrandonText_Regular.otf');
-
+body {
+  margin: 0;
+}
 .landing-container {
   width: 380px;
   height: 660px;
