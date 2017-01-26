@@ -1,8 +1,0 @@
-.menu-item-list {
-  @include outer-container;
-  .menu-item {
-    @include span-columns(6);
-    width: 172px;
-    margin: 5px;
-  }
-}
