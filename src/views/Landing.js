@@ -16,16 +16,17 @@ export default class Landing extends Component {
             ./assets/images/logo@3x.png 3x"
             />
         </div>
-
           <img src="../assets/images/welcome-back.png"
               srcset="./assets/images/welcome-back@2x.png 2x,
               ./assets/images/welcome-back@3x.png 3x"
               className="welcome"/>
+            <div className="button-container">
         <div className="button">
           <Link to="/cart">Re-order</Link>
         </div>
         <div className="button">
           <Link to="/location">New Order</Link>
+        </div>
         </div>
         <div>
         <Nav />

@@ -6,13 +6,13 @@ class Nav extends Component {
     return(
       <div className="nav">
         <Link to="/">
-          <span className="nav-item">home</span>
+          <span className="nav-item">order</span>
         </Link>
         <Link to="/history">
           <span className="nav-item">history</span>
         </Link>
         <Link to="/location">
-          <span className="nav-item">location</span>
+          <span className="nav-item">locate</span>
         </Link>
       </div>
     )
