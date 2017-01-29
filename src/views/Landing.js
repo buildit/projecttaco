@@ -21,7 +21,7 @@ export default class Landing extends Component {
               ./assets/images/welcome-back@3x.png 3x"
               className="welcome"/>
             <div className="button-container">
-        <div className="button">
+        <div className="button-pink">
           <Link to="/cart">Re-order</Link>
         </div>
         <div className="button">
