@@ -7,18 +7,24 @@ import PlaceholderImage from '../components/PlaceholderImage';
 class Location extends Component {
   render() {
     return(
+      <div className="main-container">
       <div className="view location">
-        <TacoCrumbs viewName="Choose a restaurant" />
-        <div className="map-type-picker">
-          <span className="map-type active">Map</span>
-          <span className="map-type">List</span>
+        <div className="header">
+          <div className="header-text">
+            <span><img src="../assets/images/back-button.png" className="back-button"/></span>
+            <span>Choose a Restaurant</span>
+            <span><img src="../assets/images/cart-icon.png" className="cart-button"/></span>
+          </div>
         </div>
-        <PlaceholderImage width={500} height={300} label="Map centered on current location"/>
-        <div className="button">
-          <Link to="/menu">Menu</Link>
+        <div className="map-container">
+          <img src="../assets/images/map.png" className="map"/>
+        </div>
+        <div className="search-container">
+          <div className="search-input">10003</div>
         </div>
         <Nav />
       </div>
+    </div>
     )
   }
 };
