@@ -20,7 +20,10 @@ class Location extends Component {
           <img src="../assets/images/map.png" className="map"/>
         </div>
         <div className="search-container">
-          <div className="search-input">10003</div>
+          <div className="search-input"></div>
+            <div className="button-search">
+              <Link to="/cart">Search</Link>
+            </div>
         </div>
         <Nav />
       </div>
