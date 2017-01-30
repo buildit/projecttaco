@@ -14,6 +14,9 @@ class Nav extends Component {
         <Link to="/location">
           <span className="nav-item">locate</span>
         </Link>
+        <Link to="/account">
+          <span className="nav-item">account</span>
+        </Link>
       </div>
     )
   }

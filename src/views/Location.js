@@ -25,6 +25,14 @@ class Location extends Component {
               <Link to="/cart">Search</Link>
             </div>
         </div>
+        <div className="list-container">
+          <div className="list-item">
+            <div className="mile-marker-container">
+            <span><img src="../assets/images/marker-1.png"/></span>
+            <span className="miles-text">0.1 MI</span>
+            </div>
+          </div>
+        </div>
         <Nav />
       </div>
     </div>
