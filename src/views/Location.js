@@ -14,7 +14,7 @@ class Location extends Component {
             <img src="../assets/images/back-button.png" />
           </div>
           <div className="header-text">
-            Choose a Restaurant
+            CHOOSE A RESTAURANT
           </div>
           <div className="cart-button">
             <img src="../assets/images/cart-icon.png" />
@@ -22,6 +22,7 @@ class Location extends Component {
         </div>
         <div className="map-container">
           <img src="../assets/images/map.png" className="map"/>
+          <img src="../assets/images/re-center-button.png" className="recenter-button"/>
         </div>
         <div className="search-container">
           <div className="search-input"></div>
