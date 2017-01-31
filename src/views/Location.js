@@ -10,10 +10,14 @@ class Location extends Component {
       <div className="main-container">
       <div className="view location">
         <div className="header">
+          <div className="back-button">
+            <img src="../assets/images/back-button.png" />
+          </div>
           <div className="header-text">
-            <span><img src="../assets/images/back-button.png" className="back-button"/></span>
-            <span>Choose a Restaurant</span>
-            <span><img src="../assets/images/cart-icon.png" className="cart-button"/></span>
+            Choose a Restaurant
+          </div>
+          <div className="cart-button">
+            <img src="../assets/images/cart-icon.png" />
           </div>
         </div>
         <div className="map-container">
@@ -28,11 +32,68 @@ class Location extends Component {
         <div className="list-container">
           <div className="list-item">
             <div className="mile-marker-container">
-            <span><img src="../assets/images/marker-1.png"/></span>
-            <span className="miles-text">0.1 MI</span>
+              <img src="../assets/images/marker-1.png" />
+                <div className="miles-text">
+                  0.1 MI
+                </div>
+            </div>
+            <div className="list-item-content">
+              <div className="location-address">
+              18 E. 14th Street New York, NY 10003
+              </div>
+              <div className="select-location-button">
+                <div className="select-location-text">
+                  Select Location
+                </div>
+              </div>
+            </div>
+            <div className="expand">
+              <img src="../assets/images/expand.png" />
+            </div>
+        </div>
+        <div className="list-item">
+          <div className="mile-marker-container">
+            <img src="../assets/images/marker-2.png" />
+              <div className="miles-text">
+                0.3 MI
+              </div>
+          </div>
+          <div className="list-item-content">
+            <div className="location-address">
+            390 8th Avenue New York, NY 10001
+            </div>
+            <div className="select-location-button">
+              <div className="select-location-text">
+                Select Location
+              </div>
+            </div>
+          </div>
+          <div className="expand">
+            <img src="../assets/images/expand.png" />
+          </div>
+      </div>
+      <div className="list-item">
+        <div className="mile-marker-container">
+          <img src="../assets/images/marker-3.png" />
+            <div className="miles-text">
+              0.4 MI
+            </div>
+        </div>
+        <div className="list-item-content">
+          <div className="location-address">
+          18 E. 14th Street New York, NY 10003
+          </div>
+          <div className="select-location-button">
+            <div className="select-location-text">
+              Select Location
             </div>
           </div>
         </div>
+        <div className="expand">
+          <img src="../assets/images/expand.png" />
+        </div>
+    </div>
+      </div>
         <Nav />
       </div>
     </div>
