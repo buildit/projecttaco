@@ -20,6 +20,7 @@ const fakeCategories = [
 class MenuCategoryList extends Component {
   render() {
     return(
+      <div className="menu-holder">
       <div className="menu-category-list">
         {fakeCategories.map((category, index) => (
           <MenuCategoryItem
@@ -30,6 +31,7 @@ class MenuCategoryList extends Component {
           />
         ))}
       </div>
+    </div>
     )
   }
 };

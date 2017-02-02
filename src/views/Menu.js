@@ -8,7 +8,7 @@ import MenuCategoryList from '../components/MenuCategoryList';
 class Menu extends Component {
   render() {
     return(
-      <div className="view menu">
+      <div className="view-menu">
         <div className="header">
           <div className="back-button">
             <img src="../assets/images/back-button.png" />
