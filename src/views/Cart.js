@@ -9,13 +9,24 @@ class Cart extends Component {
   render() {
     return(
       <div className="view cart">
-        <ViewTitle title="Place your order" />
-          <div className="promo">
-            <PlaceholderImage width={375} height={200} label="Promo image"/>
-            <div>Cinnabon delights | Add to order for $1</div>
-            <button>Add to order</button>
+        <div className="header">
+          <div className="back-button">
+            <img src="../assets/images/back-button.png" />
           </div>
-
+          <div className="header-text">
+            PLACE YOUR ORDER
+          </div>
+          <div className="cart-button">
+            <img src="../assets/images/cart-icon.png" />
+          </div>
+        </div>
+          <div className="promo">
+            <div className="add-button-container">
+            <div className="button-add">
+              <Link to="/location">Add to Order</Link>
+            </div>
+          </div>
+          </div>
         <div>
 
           <div className="cart-header">
