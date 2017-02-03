@@ -28,11 +28,40 @@ class Cart extends Component {
           </div>
           </div>
         <div>
-
           <div className="cart-header">
-            <span>Review order</span>
-            <span>13 items</span>
+            <div className="triangle"/>
+            <div className="review-order">Review  order</div>
+            <div className="order-items">13 items</div>
           </div>
+          <div className="order-list">
+            <div className="order-list-item">
+              <span className="count">6</span>
+              <span className="desc">Double Stacked Tacos- Nacho Crunch</span>
+              <span className="price">$5.00</span>
+            </div>
+          </div>
+          <div className="order-list">
+            <div className="order-list-item">
+              <span className="count">6</span>
+              <span className="desc">Double Stacked Tacos- Nacho Crunch</span>
+              <span className="price">$5.00</span>
+            </div>
+          </div>
+          <div className="order-list">
+            <div className="order-list-item">
+              <span className="count">6</span>
+              <span className="desc">Double Stacked Tacos- Nacho Crunch</span>
+              <span className="price">$5.00</span>
+            </div>
+          </div>
+          <div className="order-list">
+            <div className="order-list-item">
+              <span className="count">6</span>
+              <span className="desc">Double Stacked Tacos- Nacho Crunch</span>
+              <span className="price">$5.00</span>
+            </div>
+          </div>
+
 
           <div className="pickup-location">
             <h2>Pickup location</h2>
