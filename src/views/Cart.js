@@ -4,13 +4,14 @@ import Nav from '../components/Nav';
 import TacoCrumbs from '../components/TacoCrumbs';
 import ViewTitle from '../components/ViewTitle';
 import PlaceholderImage from '../components/PlaceholderImage';
+import { browserHistory } from 'react-router';
 
 class Cart extends Component {
   render() {
     return(
       <div className="view cart">
         <div className="header">
-          <div className="back-button">
+          <div className="back-button" className="back-button" onClick={browserHistory.goBack}>
             <img src="../assets/images/back-button.png" />
           </div>
           <div className="header-text">

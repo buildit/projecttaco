@@ -22,7 +22,7 @@ export default class Landing extends Component {
               className="welcome"/>
             <div className="button-container">
         <div className="button-pink">
-          <Link to="/cart">Recent Orders</Link>
+          <Link to="/history">Recent Orders</Link>
         </div>
         <div className="button">
           <Link to="/location">New Order</Link>

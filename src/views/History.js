@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import Nav from '../components/Nav';
 import ViewTitle from '../components/ViewTitle';
+import { browserHistory } from 'react-router';
 
 class History extends Component {
   render() {

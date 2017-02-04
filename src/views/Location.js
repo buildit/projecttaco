@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import Nav from '../components/Nav';
 import TacoCrumbs from '../components/TacoCrumbs';
 import PlaceholderImage from '../components/PlaceholderImage';
+import { browserHistory } from 'react-router';
 
 class Location extends Component {
   render() {
@@ -10,14 +11,14 @@ class Location extends Component {
       <div className="main-container">
       <div className="view location">
         <div className="header">
-          <div className="back-button">
+          <div className="back-button" onClick={browserHistory.goBack}>
             <img src="../assets/images/back-button.png" />
           </div>
           <div className="header-text">
             CHOOSE A RESTAURANT
           </div>
           <div className="cart-button">
-            <img src="../assets/images/cart-icon.png" />
+          <Link to="/cart">  <img src="../assets/images/cart-icon.png" /></Link>
           </div>
         </div>
         <div className="map-container">
@@ -27,7 +28,7 @@ class Location extends Component {
         <div className="search-container">
           <div className="search-input"></div>
             <div className="button-search">
-              <Link to="/cart">Search</Link>
+            <Link to="/">  Search </Link>
             </div>
         </div>
         <div className="list-container">
@@ -44,7 +45,7 @@ class Location extends Component {
               </div>
               <div className="select-location-button">
                 <div className="select-location-text">
-                  Select Location
+                <Link to="/menu">  Select Location </Link>
                 </div>
               </div>
             </div>
@@ -65,7 +66,7 @@ class Location extends Component {
             </div>
             <div className="select-location-button">
               <div className="select-location-text">
-                Select Location
+                <Link to="/menu">  Select Location </Link>
               </div>
             </div>
           </div>
@@ -86,7 +87,7 @@ class Location extends Component {
           </div>
           <div className="select-location-button">
             <div className="select-location-text">
-              Select Location
+              <Link to="/menu">  Select Location </Link>
             </div>
           </div>
         </div>
