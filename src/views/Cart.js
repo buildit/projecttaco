@@ -141,6 +141,24 @@ class Cart extends Component {
                 <img src="../assets/images/expand.png" />
             </div>
           </div>
+          <div className="terms">
+            <div className="terms-header">
+              Terms and Conditions
+            </div>
+            <div className="terms-content">
+              I here by agree to Taco Bell’s Terms & Conditions and understand that a SMS message will be delivered to my mobile devise provided in account settings.
+            </div>
+          </div>
+          <div className="place-order">
+            <div className="sub">
+              subtotal $25.72
+            </div>
+            <div>
+              <div className="button-reorder">
+                <Link to="/receipt">Place Order</Link>
+              </div>
+            </div>
+          </div>
         </div>
         <Nav />
       </div>

@@ -7,7 +7,7 @@ import { browserHistory } from 'react-router';
 class History extends Component {
   render() {
     return(
-      <div className="view history">
+      <div className="view-history">
         <div className="header">
           <div className="back-button" onClick={browserHistory.goBack}>
             <img src="../assets/images/back-button.png" />

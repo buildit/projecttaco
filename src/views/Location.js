@@ -9,7 +9,7 @@ class Location extends Component {
   render() {
     return(
       <div className="main-container">
-      <div className="view location">
+      <div className="view-location">
         <div className="header">
           <div className="back-button" onClick={browserHistory.goBack}>
             <img src="../assets/images/back-button.png" />
