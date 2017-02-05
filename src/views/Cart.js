@@ -9,7 +9,7 @@ import { browserHistory } from 'react-router';
 class Cart extends Component {
   render() {
     return(
-      <div className="view cart">
+      <div className="view-cart">
         <div className="header">
           <div className="back-button" className="back-button" onClick={browserHistory.goBack}>
             <img src="../assets/images/back-button.png" />
@@ -62,40 +62,85 @@ class Cart extends Component {
               <span className="price">$5.00</span>
             </div>
           </div>
-
-
-          <div className="pickup-location">
-            <h2>Pickup location</h2>
-            <div className="content">
-              <div className="address">
-                <p>123 Union St.</p>
-                <p>San Antonio, TX 55555</p>
-                <Link to="/location">Change location</Link>
-              </div>
-              <div className="map">
-                <PlaceholderImage width={100} height={100} label=""/>
-              </div>
+          <div className="total-plain">
+            <span className="subtotal-plain">
+              Subtotal
+            </span>
+            <span className="amount-plain">
+              $11.98
+            </span>
+          </div>
+          <div className="total-plain">
+            <span className="subtotal-plain">
+              Tax
+            </span>
+            <span className="amount-plain">
+              TBD
+            </span>
+          </div>
+          <div className="total">
+            <span className="subtotal">
+              Subtotal
+            </span>
+            <span className="amount">
+              $11.98
+            </span>
+          </div>
+          <div className="pick-up">
+            <div className="pick-up-location">
+              Pick up location
+            </div>
+            <div className="pick-up-change-location">
+            <Link to="/location">  change location </Link>
             </div>
           </div>
-
-          <div className="payment-information">
-            <h2>Payment information</h2>
-            <div className="payment-method">
-              <div className="checkbox">
-                <input type="checkbox"></input>
-              </div>
-              <div>
-                <h3>Gift card</h3>
-                <span>$12.32 remaining</span>
-              </div>
+          <div className="cart-list-holder">
+          <div className="cart-block">
+          <div className="cart-info">
+            <div className="cart-list-holder-address">
+              18 E 14th Street,<br/> New York, NY 10003
+            </div>
+            <div className="directions">
+              get directions
             </div>
           </div>
-
-          <div className="place-order">
-            <span>Subtotal $25.72</span>
-            <button>Place order</button>
+          <div className="cart-image">
+            <img src="../assets/images/map.png" className="cart-image"/>
           </div>
-
+          </div>
+        </div>
+        <div className="pick-up">
+          <div className="pick-up-location">
+          payment information
+          </div>
+        </div>
+        <div className="payment">
+          <div className="radio-button">
+            <img src="../assets/images/radio-button.png" />
+          </div>
+          <div className="payment-info">
+            <span className="cc-info">VISA ****0732</span>
+            <br/>
+            <span className="cc-exp">Expires 05/2018</span>
+          </div>
+          <div className="payment-expand">
+              <img src="../assets/images/expand.png" />
+          </div>
+        </div>
+        <div className="divider" />
+          <div className="payment">
+            <div className="radio-button">
+              <img src="../assets/images/radio-button.png" />
+            </div>
+            <div className="payment-info">
+              <span className="cc-info">GIFT CARD</span>
+              <br/>
+              <span className="cc-exp">$12.32 remaining</span>
+            </div>
+            <div className="payment-expand">
+                <img src="../assets/images/expand.png" />
+            </div>
+          </div>
         </div>
         <Nav />
       </div>
