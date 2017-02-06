@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Nav from '../components/Nav';
 import TacoCrumbs from '../components/TacoCrumbs';
 import PlaceholderImage from '../components/PlaceholderImage';
+import ButtonLargePink from '../components/ButtonLargePink';
 
 export default class Landing extends Component {
   render() {
@@ -11,19 +12,14 @@ export default class Landing extends Component {
       <div className="main-container">
       <div className="landing-container">
         <div className="logo">
-          <img src="../assets/images/logo.png"
-            srcset="./assets/images/logo@2x.png 2x,
-            ./assets/images/logo@3x.png 3x"
-            />
+          <img src="../assets/images/logo.png"/>
         </div>
-          <img src="../assets/images/welcome-back.png"
-              srcset="./assets/images/welcome-back@2x.png 2x,
-              ./assets/images/welcome-back@3x.png 3x"
-              className="welcome"/>
+          <img src="../assets/images/welcome-back.png" className="welcome"/>
             <div className="button-container">
-        <div className="button-pink">
-          <Link to="/history">Recent Orders</Link>
-        </div>
+              <ButtonLargePink
+                buttonText='Recent Order'
+                ButtonLink="/history"
+                />
         <div className="button">
           <Link to="/location">New Order</Link>
         </div>
