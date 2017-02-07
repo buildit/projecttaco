@@ -25,7 +25,7 @@ class Receipt extends Component {
           Order: 012546
         </div>
         <div className="pick-up">
-          <div className="pick-up-location">
+          <div className="pick-up-location-small">
             Pick up location
           </div>
           <div className="pick-up-time">
