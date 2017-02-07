@@ -87,7 +87,7 @@ class Cart extends Component {
             </span>
           </div>
           <div className="pick-up">
-            <div className="pick-up-location">
+            <div className="pick-up-location-small">
               Pick up location
             </div>
             <div className="pick-up-change-location">
@@ -110,7 +110,7 @@ class Cart extends Component {
           </div>
         </div>
         <div className="pick-up">
-          <div className="pick-up-location">
+          <div className="pick-up-location-large">
           payment information
           </div>
         </div>
