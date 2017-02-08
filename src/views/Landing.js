@@ -5,6 +5,7 @@ import Nav from '../components/Nav';
 import TacoCrumbs from '../components/TacoCrumbs';
 import PlaceholderImage from '../components/PlaceholderImage';
 import ButtonLargePink from '../components/ButtonLargePink';
+import ButtonLargeWhite from '../components/ButtonLargeWhite';
 
 export default class Landing extends Component {
   render() {
@@ -20,9 +21,10 @@ export default class Landing extends Component {
                 buttonText='Recent Order'
                 ButtonLink="/history"
                 />
-        <div className="button">
-          <Link to="/location">New Order</Link>
-        </div>
+                <ButtonLargeWhite
+                    buttonText='New Order'
+                    ButtonLink="/location"
+                    />
         </div>
         <div>
         <Nav />

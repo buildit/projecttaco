@@ -5,6 +5,7 @@ import TacoCrumbs from '../components/TacoCrumbs';
 import ViewTitle from '../components/ViewTitle';
 import PlaceholderImage from '../components/PlaceholderImage';
 import { browserHistory } from 'react-router';
+import Notifier from 'notifications';
 
 class Cart extends Component {
   render() {
