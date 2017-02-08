@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import Nav from '../components/Nav';
 import ViewTitle from '../components/ViewTitle';
+import PickUpLocationHeader from '../components/PickUpLocationHeader';
 import { browserHistory } from 'react-router';
 
 class Receipt extends Component {
@@ -24,14 +25,10 @@ class Receipt extends Component {
         <div className="order-large">
           Order: 012546
         </div>
-        <div className="pick-up">
-          <div className="pick-up-location-small">
-            Pick up location
-          </div>
-          <div className="pick-up-time">
-            pick up time
-          </div>
-        </div>
+        <PickUpLocationHeader
+          locationHeader="pick up location"
+          timeHeader="pick up time"
+          />
         <div className="pick-up-info">
           <div className="pick-up-address">
             18 E. 14th Street New York, NY 10003
