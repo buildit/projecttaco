@@ -43,6 +43,7 @@ class MenuItemList extends Component {
             price={formatPrice(item.price)}
             coins={item.coins}
             imageUrl={item.imageUrl}
+            onAddClick={this.props.onAddClick}
           />
         ))}
       </div>

@@ -6,7 +6,9 @@ class QuantityPicker extends Component {
       <div className="quantity-picker">
         <span className="minus">-</span>
         <span className="quantity">{this.props.quantity}</span>
-        <span className="plus">+</span>
+        <span className="plus" onClick={() => {
+            this.props.onAddClick ();
+          }}>+</span>
       </div>
     )
   }

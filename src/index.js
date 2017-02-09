@@ -14,10 +14,20 @@ import { Router, Route, hashHistory } from 'react-router';
 import { Provider } from 'react-redux';
 
 import { createStore } from 'redux';
-const initialState = {cartCount:3};
+const initialState = {cartCount:0};
 
 const reducer = (state=initialState, action) => {
-  return state;
+  switch (action.type) {
+    case "INCREMENT_CART_COUNT": {
+      return {
+        cartCount: state.cartCount + 1
+      }
+    }
+    default: {
+      return state;
+    }
+
+  }
 }
 const store = createStore(reducer);
 

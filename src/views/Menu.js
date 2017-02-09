@@ -17,7 +17,12 @@ class Menu extends Component {
         cartCount={this.props.cartCount}
         />
         <MenuCategoryList />
-        <MenuItemList />
+        <MenuItemList
+          onAddClick={() => {
+            this.props.incrementCartCount();
+          }
+          }
+          />
         <Nav />
       </div>
     )
@@ -29,8 +34,15 @@ const mapStateToProps = (state) => {
     cartCount: state.cartCount
   }
 }
-const mapDispatchToProps = () => {
-  return {}
+const mapDispatchToProps = (dispatch) => {
+  const incrementCartCount = () => {
+    dispatch ({
+      type: "INCREMENT_CART_COUNT"
+    });
+  }
+  return {
+    incrementCartCount: incrementCartCount
+  }
 }
 const ConnectedMenu = connect (mapStateToProps, mapDispatchToProps) (Menu)
 
