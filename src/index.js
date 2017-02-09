@@ -13,8 +13,14 @@ import StyleGuide from './views/StyleGuide';
 import { Router, Route, hashHistory } from 'react-router';
 import { Provider } from 'react-redux';
 
-import createStore from './store';
-const store = createStore();
+import { createStore } from 'redux';
+const initialState = {cartCount:3};
+
+const reducer = (state=initialState, action) => {
+  return state;
+}
+const store = createStore(reducer);
+
 
 render((
   <Provider store={store}>

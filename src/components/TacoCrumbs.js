@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import { browserHistory } from 'react-router';
 
-const TacoCrumbs = ({ viewName }) => (
+const TacoCrumbs = ({ viewName,  cartCount }) => (
   <div className="header">
     <div className="back-button" className="back-button" onClick={browserHistory.goBack}>
       <img src="../assets/images/back-button.png" />
@@ -12,7 +12,7 @@ const TacoCrumbs = ({ viewName }) => (
     </div>
     <div className="cart-button">
       <Link to="/cart"><img src="../assets/images/cart-icon.png" /></Link>
-      <span>13</span>
+      <span>{ cartCount }</span>
     </div>
   </div>
 )

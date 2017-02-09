@@ -6,6 +6,7 @@ import MenuItemList from '../components/MenuItemList';
 import MenuCategoryList from '../components/MenuCategoryList';
 import TacoCrumbs from '../components/TacoCrumbs';
 import { browserHistory } from 'react-router';
+import { connect } from 'react-redux';
 
 class Menu extends Component {
   render() {
@@ -13,6 +14,7 @@ class Menu extends Component {
       <div className="view-menu">
       <TacoCrumbs
         viewName="new order"
+        cartCount={this.props.cartCount}
         />
         <MenuCategoryList />
         <MenuItemList />
@@ -22,4 +24,14 @@ class Menu extends Component {
   }
 };
 
-export default Menu;
+const mapStateToProps = (state) => {
+  return {
+    cartCount: state.cartCount
+  }
+}
+const mapDispatchToProps = () => {
+  return {}
+}
+const ConnectedMenu = connect (mapStateToProps, mapDispatchToProps) (Menu)
+
+export default ConnectedMenu;
