@@ -22,6 +22,10 @@ class Menu extends Component {
             this.props.incrementCartCount();
           }
           }
+          onRemoveClick={() => {
+            this.props.decrementCartCount();
+          }
+          }
           />
         <Nav />
       </div>
@@ -39,9 +43,15 @@ const mapDispatchToProps = (dispatch) => {
     dispatch ({
       type: "INCREMENT_CART_COUNT"
     });
+  };
+  const decrementCartCount = () => {
+    dispatch ({
+      type: "DECREMENT_CART_COUNT"
+    });
   }
   return {
-    incrementCartCount: incrementCartCount
+    incrementCartCount: incrementCartCount,
+    decrementCartCount: decrementCartCount
   }
 }
 const ConnectedMenu = connect (mapStateToProps, mapDispatchToProps) (Menu)

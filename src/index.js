@@ -12,8 +12,8 @@ import History from './views/History';
 import StyleGuide from './views/StyleGuide';
 import { Router, Route, hashHistory } from 'react-router';
 import { Provider } from 'react-redux';
-
 import { createStore } from 'redux';
+
 const initialState = {cartCount:0};
 
 const reducer = (state=initialState, action) => {
@@ -21,6 +21,11 @@ const reducer = (state=initialState, action) => {
     case "INCREMENT_CART_COUNT": {
       return {
         cartCount: state.cartCount + 1
+      }
+    }
+    case "DECREMENT_CART_COUNT": {
+      return {
+        cartCount: state.cartCount - 1
       }
     }
     default: {

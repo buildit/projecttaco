@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import QuantityPicker from './QuantityPicker';
 
-const MenuItem = ({ name, price, coins, imageUrl, onAddClick, quantity = 0 }) => (
+const MenuItem = ({ name, price, coins, imageUrl, onAddClick, onRemoveClick, quantity = 0 }) => (
     <div className="menu-item">
       <img src={imageUrl} className="menu-image"/>
       <div className="info">
@@ -16,6 +16,7 @@ const MenuItem = ({ name, price, coins, imageUrl, onAddClick, quantity = 0 }) =>
       </div>
       <QuantityPicker
         onAddClick={onAddClick}
+        onRemoveClick={onRemoveClick}
         quantity={quantity}
         />
     </div>

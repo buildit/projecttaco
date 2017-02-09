@@ -12,7 +12,7 @@ const TacoCrumbs = ({ viewName,  cartCount }) => (
     </div>
     <div className="cart-button">
       <Link to="/cart"><img src="../assets/images/cart-icon.png" /></Link>
-      <span>{ cartCount }</span>
+      <span className="cartNumber">{ cartCount }</span>
     </div>
   </div>
 )

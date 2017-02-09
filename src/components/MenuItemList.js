@@ -44,6 +44,7 @@ class MenuItemList extends Component {
             coins={item.coins}
             imageUrl={item.imageUrl}
             onAddClick={this.props.onAddClick}
+            onRemoveClick={this.props.onRemoveClick}
           />
         ))}
       </div>
