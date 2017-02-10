@@ -14,7 +14,11 @@ import { Router, Route, hashHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
-const initialState = {cartCount:0};
+const initialState = {
+  cartCount:0,
+  orderAddress:"18 E 14th Street",
+  orderState:"New York, NY 10003"
+};
 
 const reducer = (state=initialState, action) => {
   switch (action.type) {
@@ -25,7 +29,28 @@ const reducer = (state=initialState, action) => {
     }
     case "DECREMENT_CART_COUNT": {
       return {
-        cartCount: state.cartCount - 1
+        cartCount: state.cartCount - 1,
+      }
+    }
+    case "SELECT_ADDRESS_ONE": {
+      return {
+        cartCount: state.cartCount,
+        orderAddress: "18 E. 14th Street",
+        orderState: "New York, NY 10003"
+      }
+    }
+    case "SELECT_ADDRESS_TWO": {
+      return {
+        cartCount: state.cartCount,
+        orderAddress: "390 8th Avenue",
+        orderState: "New York, NY 10001"
+      }
+    }
+    case "SELECT_ADDRESS_THREE": {
+      return {
+        cartCount: state.cartCount,
+        orderAddress: "77 Sands street",
+        orderState: "Crooklyn, NY 11234"
       }
     }
     default: {

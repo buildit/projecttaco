@@ -1,24 +1,19 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import Nav from '../components/Nav';
+import TacoCrumbs from '../components/TacoCrumbs';
 import MenuCategoryListHistory from '../components/MenuCategoryListHistory';
 import { browserHistory } from 'react-router';
+import { connect } from 'react-redux';
 
 class History extends Component {
   render() {
     return(
       <div className="view-history">
-        <div className="header">
-          <div className="back-button" onClick={browserHistory.goBack}>
-            <img src="../assets/images/back-button.png" />
-          </div>
-          <div className="header-text">
-            HISTORY
-          </div>
-          <div className="cart-button">
-          <Link to="/cart">  <img src="../assets/images/cart-icon.png" /></Link>
-          </div>
-        </div>
+        <TacoCrumbs
+          viewName="choose a restaurant"
+          cartCount={this.props.cartCount}
+          />
         <MenuCategoryListHistory />
         <div className="order-list-holder">
         <div className="order-block">
@@ -127,4 +122,12 @@ class History extends Component {
   }
 };
 
-export default History;
+const mapStateToProps = (state) => {
+  return {
+    cartCount: state.cartCount
+  }
+}
+
+const ConnectedHistory= connect (mapStateToProps) (History)
+
+export default ConnectedHistory;

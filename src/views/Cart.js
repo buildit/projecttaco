@@ -6,22 +6,17 @@ import ViewTitle from '../components/ViewTitle';
 import PlaceholderImage from '../components/PlaceholderImage';
 import { browserHistory } from 'react-router';
 import Notifier from 'notifications';
+import { connect } from 'react-redux';
+
 
 class Cart extends Component {
   render() {
     return(
       <div className="view-cart">
-        <div className="header">
-          <div className="back-button" className="back-button" onClick={browserHistory.goBack}>
-            <img src="../assets/images/back-button.png" />
-          </div>
-          <div className="header-text">
-            PLACE YOUR ORDER
-          </div>
-          <div className="cart-button">
-            <img src="../assets/images/cart-icon.png" />
-          </div>
-        </div>
+        <TacoCrumbs
+          viewName="cart"
+          cartCount={this.props.cartCount}
+          />
           <div className="promo">
             <div className="add-button-container">
             <div className="button-add">
@@ -33,7 +28,7 @@ class Cart extends Component {
           <div className="cart-header">
             <div className="triangle"/>
             <div className="review-order">Review  order</div>
-            <div className="order-items">13 items</div>
+            <div className="order-items">{this.props.cartCount} items</div>
           </div>
           <div className="order-list">
             <div className="order-list-item">
@@ -99,7 +94,7 @@ class Cart extends Component {
           <div className="cart-block">
           <div className="cart-info">
             <div className="cart-list-holder-address">
-              18 E 14th Street,<br/> New York, NY 10003
+              {this.props.orderAddress}<br/> {this.props.orderState}
             </div>
             <div className="directions">
               get directions
@@ -167,4 +162,14 @@ class Cart extends Component {
   }
 };
 
-export default Cart;
+const mapStateToProps = (state) => {
+  return {
+    cartCount: state.cartCount,
+    orderAddress: state.orderAddress,
+    orderState: state.orderState
+  }
+}
+
+const ConnectedCart = connect (mapStateToProps) (Cart)
+
+export default ConnectedCart;

@@ -4,6 +4,7 @@ import Nav from '../components/Nav';
 import ViewTitle from '../components/ViewTitle';
 import PickUpLocationHeader from '../components/PickUpLocationHeader';
 import { browserHistory } from 'react-router';
+import { connect } from 'react-redux';
 
 class Receipt extends Component {
   render() {
@@ -31,7 +32,7 @@ class Receipt extends Component {
           />
         <div className="pick-up-info">
           <div className="pick-up-address">
-            18 E. 14th Street New York, NY 10003
+            {this.props.orderAddress}<br/>{this.props.orderState}
           </div>
           <div className="pick-up-ready-time">
             Ready after 02:35pm
@@ -54,4 +55,13 @@ class Receipt extends Component {
   }
 };
 
-export default Receipt;
+const mapStateToProps = (state) => {
+  return {
+    orderAddress: state.orderAddress,
+    orderState: state.orderState
+  }
+}
+
+const ConnectedReceipt= connect (mapStateToProps) (Receipt)
+
+export default ConnectedReceipt;

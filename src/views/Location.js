@@ -4,23 +4,17 @@ import Nav from '../components/Nav';
 import TacoCrumbs from '../components/TacoCrumbs';
 import PlaceholderImage from '../components/PlaceholderImage';
 import { browserHistory } from 'react-router';
+import { connect } from 'react-redux';
 
 class Location extends Component {
   render() {
     return(
       <div className="main-container">
       <div className="view-location">
-        <div className="header">
-          <div className="back-button" onClick={browserHistory.goBack}>
-            <img src="../assets/images/back-button.png" />
-          </div>
-          <div className="header-text">
-            CHOOSE A RESTAURANT
-          </div>
-          <div className="cart-button">
-          <Link to="/cart">  <img src="../assets/images/cart-icon.png" /></Link>
-          </div>
-        </div>
+        <TacoCrumbs
+          viewName="choose a RESTAURANT"
+          cartCount={this.props.cartCount}
+          />
         <div className="map-container">
           <img src="../assets/images/map.png" className="map"/>
           <img src="../assets/images/re-center-button.png" className="recenter-button"/>
@@ -45,7 +39,9 @@ class Location extends Component {
               </div>
               <div className="select-location-button">
                 <div className="select-location-text">
-                <Link to="/menu">  Select Location </Link>
+                <Link to="/menu" onClick={() => {
+                    this.props.selectAddressOne();
+                  }}>  Select Location </Link>
                 </div>
               </div>
             </div>
@@ -66,7 +62,9 @@ class Location extends Component {
             </div>
             <div className="select-location-button">
               <div className="select-location-text">
-                <Link to="/menu">  Select Location </Link>
+                <Link to="/menu" onClick={() => {
+                    this.props.selectAddressTwo();
+                  }}>  Select Location </Link>
               </div>
             </div>
           </div>
@@ -83,11 +81,13 @@ class Location extends Component {
         </div>
         <div className="list-item-content">
           <div className="location-address">
-          18 E. 14th Street New York, NY 10003
+          77 Sands Street Crooklyn, NY 11234
           </div>
           <div className="select-location-button">
             <div className="select-location-text">
-              <Link to="/menu">  Select Location </Link>
+              <Link to="/menu" onClick={() => {
+                  this.props.selectAddressThree();
+                }}>  Select Location </Link>
             </div>
           </div>
         </div>
@@ -103,4 +103,37 @@ class Location extends Component {
   }
 };
 
-export default Location;
+const mapStateToProps = (state) => {
+  return {
+    cartCount: state.cartCount,
+    orderAddress: state.orderAddress,
+    orderState: state.orderState
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  const selectAddressOne = () => {
+    dispatch ({
+      type: "SELECT_ADDRESS_ONE"
+    });
+  };
+  const selectAddressTwo = () => {
+    dispatch ({
+      type: "SELECT_ADDRESS_TWO"
+    });
+  };
+  const selectAddressThree = () => {
+    dispatch ({
+      type: "SELECT_ADDRESS_THREE"
+    });
+  };
+  return {
+    selectAddressOne: selectAddressOne,
+    selectAddressTwo: selectAddressTwo,
+    selectAddressThree: selectAddressThree
+  }
+}
+
+const ConnectedLocation = connect (mapStateToProps, mapDispatchToProps) (Location)
+
+export default ConnectedLocation;

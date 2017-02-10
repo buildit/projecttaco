@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MenuItem from './MenuItem';
+import { connect } from 'react-redux';
 
 // TODO: Provide via Redux store, via network request
 const fakeMenu = [

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import QuantityPicker from './QuantityPicker';
+import { connect } from 'react-redux';
 
 const MenuItem = ({ name, price, coins, imageUrl, onAddClick, onRemoveClick, quantity = 0 }) => (
     <div className="menu-item">
