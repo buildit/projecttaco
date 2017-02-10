@@ -23,13 +23,18 @@ const initialState = {
 const reducer = (state=initialState, action) => {
   switch (action.type) {
     case "INCREMENT_CART_COUNT": {
+      console.log (state.orderAddress)
       return {
-        cartCount: state.cartCount + 1
+        cartCount: state.cartCount + 1,
+        orderAddress: state.orderAddress,
+        orderState: state.orderState
       }
     }
     case "DECREMENT_CART_COUNT": {
       return {
         cartCount: state.cartCount - 1,
+        orderAddress: state.orderAddress,
+        orderState: state.orderState
       }
     }
     case "SELECT_ADDRESS_ONE": {
