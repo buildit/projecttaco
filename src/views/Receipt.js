@@ -9,7 +9,7 @@ import { connect } from 'react-redux';
 class Receipt extends Component {
   render() {
     return(
-      <div className="view receipt">
+      <div className="view-receipt">
         <div className="header">
           <div className="header-text">
             order confirmation
