@@ -4,6 +4,9 @@ import Nav from '../components/Nav';
 import TacoCrumbs from '../components/TacoCrumbs';
 import ViewTitle from '../components/ViewTitle';
 import PlaceholderImage from '../components/PlaceholderImage';
+import SubTotalBlock from '../components/SubTotalBlock';
+import ReviewOrderHeader from '../components/ReviewOrderHeader';
+import OrderItemList from '../components/OrderItemList';
 import { browserHistory } from 'react-router';
 import Notifier from 'notifications';
 import { connect } from 'react-redux';
@@ -25,38 +28,12 @@ class Cart extends Component {
           </div>
           </div>
         <div>
-          <div className="cart-header">
-            <div className="triangle"/>
-            <div className="review-order">Review  order</div>
-            <div className="order-items">{this.props.cartCount} items</div>
-          </div>
+          <ReviewOrderHeader
+            review="Review Order"
+            count={this.props.cartCount}
+            />
           <div className="order-list">
-            <div className="order-list-item">
-              <span className="count">6</span>
-              <span className="desc">Double Stacked Tacos- Nacho Crunch</span>
-              <span className="price">$5.00</span>
-            </div>
-          </div>
-          <div className="order-list">
-            <div className="order-list-item">
-              <span className="count">6</span>
-              <span className="desc">Double Stacked Tacos- Nacho Crunch</span>
-              <span className="price">$5.00</span>
-            </div>
-          </div>
-          <div className="order-list">
-            <div className="order-list-item">
-              <span className="count">6</span>
-              <span className="desc">Double Stacked Tacos- Nacho Crunch</span>
-              <span className="price">$5.00</span>
-            </div>
-          </div>
-          <div className="order-list">
-            <div className="order-list-item">
-              <span className="count">6</span>
-              <span className="desc">Double Stacked Tacos- Nacho Crunch</span>
-              <span className="price">$5.00</span>
-            </div>
+            <OrderItemList/>
           </div>
           <div className="total-plain">
             <span className="subtotal-plain">
@@ -74,14 +51,10 @@ class Cart extends Component {
               TBD
             </span>
           </div>
-          <div className="total">
-            <span className="subtotal">
-              Subtotal
-            </span>
-            <span className="amount">
-              $11.98
-            </span>
-          </div>
+          <SubTotalBlock
+            subtotal="Subtotal"
+            amount="$11.98"
+            />
           <div className="pick-up">
             <div className="pick-up-location-small">
               Pick up location
