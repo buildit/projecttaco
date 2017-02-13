@@ -12,7 +12,7 @@ class Location extends Component {
       <div className="main-container">
       <div className="view-location">
         <TacoCrumbs
-          viewName="choose a RESTAURANT"
+          viewName="choose a restaurant"
           cartCount={this.props.cartCount}
           />
         <div className="map-container">
