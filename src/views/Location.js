@@ -17,7 +17,6 @@ class Location extends Component {
           />
         <div className="map-container">
           <img src="../assets/images/map.png" className="map"/>
-          //<img src="../assets/images/re-center-button.png" className="recenter-button"/>
         </div>
         <div className="search-container">
           <div className="search-input"></div>
